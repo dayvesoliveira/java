@@ -34,23 +34,6 @@ public class JavaTest {
 		
 		System.out.println(v);
 		
-		/*NumberUtils numberUtils = new NumberUtils();
-		BigDecimal percQtdSimulada = BigDecimal.ZERO;
-		Long qtdSimulada = -41L;
-		Long qtdeSimuladaTotal = -99L;
-		
-		percQtdSimulada = new BigDecimal((qtdSimulada.doubleValue() / qtdeSimuladaTotal.doubleValue()) * 100);
-		System.out.println(numberUtils.round(percQtdSimulada, 2));*/
-		
-		
-		/*NumberUtils numberUtils = new NumberUtils();
-		
-		BigDecimal vrCobertura = new BigDecimal(3410.25);
-		BigDecimal vrFinanciado = new BigDecimal(149.90);
-		
-		System.out.println("Cobertura: "   + calcularValorCobertura(vrCobertura, vrFinanciado, numberUtils));
-		System.out.println("Qtde Parc. Cobertura: "   + calcularValorParcCobertura(new BigDecimal(350), new BigDecimal(145.20), numberUtils));
-		System.out.println("Qtde Cobertura: "   + calcularQtdeParcCobertura(10, 5));*/
 	}
 	
 	public static String removeExtension(String filename) {
