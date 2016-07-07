@@ -33,7 +33,7 @@ public class JavaTest {
         v = removeExtension(fileName);
 		
 		System.out.println(v);
-		
+
 	}
 	
 	public static String removeExtension(String filename) {
