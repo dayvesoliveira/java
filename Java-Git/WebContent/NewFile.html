@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html id="j_id_jsp_1437607518_1" lang="pt-br">
+<head>
+<meta http-equiv="Content-Type"
+	content="text/html; charset=windows-1252">
+<meta name="viewport"
+	content="width=device-width,initial-scale=1,user-scalable=0">
+<title>Principal :: JRetail :: Versão:1.87.3 ::.</title>
+<link rel="shortcut icon" href="http://192.168.0.167:8080/resources/skin/blue/images/jretail.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="./principal_files/reset.css">
+<link rel="stylesheet" type="text/css" href="./principal_files/rsis.css">
+<link rel="stylesheet" type="text/css" href="./principal_files/rsis-mobile.css">
+<link rel="stylesheet" type="text/css" href="./principal_files/desktop.css">
+
+</head>
+<body>
+	
+					<div id="contentPanel" class="ctp" component="contentPanel"
+						style="width: 100%; height: 100%">
+						<form id="uieJqG#formPedidoVenda"
+							targetaction="jretail.venda.pedido.action.ConsultaPedidoVendaAction"
+							node="/pedidoVendaDto" updatefromdialog="true"
+							onkeydown="if ($W.UtilRsis != undefined) return $W.UtilRsis.pressKey(this,event,&#39;uieJqG#formPedidoVenda&#39;);"
+							onclick="$W.UtilRsis.CloseCombo(this,event);" data-ui="uieJqG">
+							<div id="uieJqG#formPedidoVenda:messagePedidoVenda" class="dMsg"
+								component="messages" messagetype="i;w;e" data-ui="uieJqG">
+								<div>
+									<div class="hMsg">
+										<div class="btsMsg">
+											<input
+												id="uieJqG#formPedidoVenda:messagePedidoVenda.btnMsgMin"
+												type="button" class="bgMsg"
+												onclick="$W.minimizeMessages(this);"><input
+												id="uieJqG#formPedidoVenda:messagePedidoVenda.btnMsgClose"
+												type="button" class="brMsg"
+												onclick="$W.closeMessages(this);">
+										</div>
+									</div>
+								</div>
+								<div id="uieJqG#formPedidoVenda:messagePedidoVenda.divMessages"
+									class="dbMsg">
+									<ul class="ulMsg"
+										id="uieJqG#formPedidoVenda:messagePedidoVenda.tbody"></ul>
+								</div>
+							</div>
+							<fieldset class="fldst">
+								<table class="lytPnl"
+									id="uieJqG#formPedidoVenda:j_id_jsp_1255727451_6"
+									style="width: 100%; float: left;">
+									<colgroup>
+										<col width="30%">
+										<col width="30%">
+										<col width="40%">
+									</colgroup>
+									<tbody>
+										<tr>
+											<td><div class="dACpt" style="visibility: visible; display: block;">
+													<label for="uieJqG#formPedidoVenda:objOrganizacao"
+														class="labelCpts"
+														style="width: 85px; visibility: visible; display: block;">Organização:</label>
+													<input id="uieJqG#formPedidoVenda:objOrganizacao" type="text"
+														size="25" component="autoComplete" class="iACpt"
+														maxlength="30" params="organizacaos"
+														optionvalue="/organizacaos/arrayList/comboOrganizacaoDto@ident"
+														optionvalueref="/pedidoVendaDto@identOrganizacao"
+														optiontext="/organizacaos/arrayList/comboOrganizacaoDto@descBreve"
+														clearbuttonvisible="true" remotesearch="true"
+														optiontextref="/pedidoVendaDto@descOrganizacao"
+														node="/organizacaos/arrayList/comboOrganizacaoDto"
+														usedomainxml="true"
+														searchparameter="HieEmpXLojPedVda.addQueryStringDefault"
+														targetaction="jretail.action.FiltroHierarquiaEmpresaXLojaAction"
+														targetmethod="consultarOrganizacaoExigindoPrivilegio"
+														focus="true" helpkey="2" editable="s" isvisible="true"
+														onlydeveloperfunction="false" tabindex="1"
+														parserattributes="/organizacaos/arrayList/comboOrganizacaoDto@ident::/pedidoVendaDto@identOrganizacao,
+									  /organizacaos/arrayList/comboOrganizacaoDto@descBreve::/pedidoVendaDto@descOrganizacao"
+														autocompleteelement="true" mask="*" childfield="true"
+														onkeypress="return AutoCompleteRsis.check(this,event, &#39;*&#39;);"
+														on_change="$W.HieEmpXLojPedVda.onChangeOrganizacao"
+														data-ui="uieJqG" onmouseover="" onmouseout=""
+														onfocus="return removeCaracs(this,&#39;*&#39;);"
+														onkeyup="return AutoCompleteRsis.start(this,event);"
+														onkeydown="return AutoCompleteRsis.checkDwn(this, event);"
+														tabindexvalue="1"
+														style="visibility: visible; display: block;">
+													<div class="slACpt "
+														id="uieJqG#formPedidoVenda:objOrganizacao.btnSearch"
+														autocompleteelement="true" tabindex="-1"
+														onmouseover="return $W.Rsis.Tip.show(this, event,&#39;Selecionar Registro&#39;,190);"
+														onmouseout="return $W.Rsis.Tip.hidden(this)"
+														remotesearch="true"
+														onclick="return AutoComplete.searchOpen(this,event);"
+														data-ui="uieJqG" style="cursor: pointer;"></div>
+													<div id="uieJqG#formPedidoVenda:objOrganizacao.clrBtn"
+														class="clrACpt "
+														clearbuttonexecute="HieEmpXLojPedVda.onClearOrganizacao"
+														onmouseover="return $W.Rsis.Tip.show(this, event,&#39;Limpar campo&#39;,120);"
+														onmouseout="return $W.Rsis.Tip.hidden(this)"
+														autocompleteelement="true" tabindex="-1"
+														onclick="SelectBox.close(this,event); return clearAutoComplete(this);"
+														data-ui="uieJqG"
+														style="cursor: pointer; visibility: visible; display: block;"></div>
+													<input id="uieJqG#formPedidoVenda:objOrganizacao.hidden"
+														type="hidden" value="">
+												</div></td>
+											<td><div class="dACpt"
+													style="visibility: visible; display: block;">
+													<label for="uieJqG#formPedidoVenda:objClassificacaoLoja"
+														class="labelCpts"
+														style="width: 85px; visibility: visible; display: block;">Classif.
+														Loja:</label>
+													<input id="uieJqG#formPedidoVenda:objClassificacaoLoja"
+														type="text" size="25" component="autoComplete"
+														class="iACpt" maxlength="20" params="classificacaoLojas"
+														optionvalue="/classificacaoLojas/arrayList/comboClassificacaoLojaDto@identClassificacaoLoja"
+														optionvalueref="/pedidoVendaDto@identClassificacaoLoja"
+														optiontext="/classificacaoLojas/arrayList/comboClassificacaoLojaDto@descClassificacaoLoja"
+														clearbuttonvisible="true" remotesearch="false"
+														optiontextref="/pedidoVendaDto@descClassificacaoLoja"
+														node="/classificacaoLojas/arrayList/comboClassificacaoLojaDto"
+														usedomainxml="true"
+														searchparameter="HieEmpXLojPedVda.addQueryStringDefault"
+														targetaction="jretail.action.FiltroHierarquiaEmpresaXLojaAction"
+														targetmethod="consultarClassificacaoLojaExigindoPrivilegio"
+														helpkey="4" editable="s" isvisible="true"
+														onlydeveloperfunction="false" tabindex="2"
+														parserattributes="/classificacaoLojas/arrayList/comboClassificacaoLojaDto@identClassificacaoLoja::/pedidoVendaDto@identClassificacaoLoja,
+									  /classificacaoLojas/arrayList/comboClassificacaoLojaDto@identClassificacaoLojaPai::/pedidoVendaDto@identClassificacaoLojaPai,
+									  /classificacaoLojas/arrayList/comboClassificacaoLojaDto@descClassificacaoLoja::/pedidoVendaDto@descClassificacaoLoja"
+														autocompleteelement="true" mask="*" childfield="true"
+														onkeypress="return AutoCompleteRsis.check(this,event, &#39;*&#39;);"
+														on_change="$W.HieEmpXLojPedVda.onChangeClassificacaoLoja"
+														data-ui="uieJqG" onmouseover="" onmouseout=""
+														onfocus="return removeCaracs(this,&#39;*&#39;);"
+														onkeyup="return AutoCompleteRsis.start(this,event);"
+														onkeydown="return AutoCompleteRsis.checkDwn(this, event);"
+														tabindexvalue="2"
+														style="visibility: visible; display: block;">
+													<div class="slACpt "
+														id="uieJqG#formPedidoVenda:objClassificacaoLoja.btnSearch"
+														autocompleteelement="true" tabindex="-1"
+														onmouseover="return $W.Rsis.Tip.show(this, event,&#39;Selecionar Classificação Loja Pai&#39;,330);"
+														onmouseout="return $W.Rsis.Tip.hidden(this)"
+														remotesearch="false"
+														onclick="return AutoComplete.viewOptions(this,event);"
+														data-ui="uieJqG" style="cursor: pointer;"></div>
+													<div
+														id="uieJqG#formPedidoVenda:objClassificacaoLoja.clrBtn"
+														class="clrACpt "
+														clearbuttonexecute="HieEmpXLojPedVda.onClearClassificacaoLoja"
+														onmouseover="return $W.Rsis.Tip.show(this, event,&#39;Limpar campo&#39;,120);"
+														onmouseout="return $W.Rsis.Tip.hidden(this)"
+														autocompleteelement="true" tabindex="-1"
+														onclick="SelectBox.close(this,event); return clearAutoComplete(this);"
+														data-ui="uieJqG"
+														style="cursor: pointer; visibility: visible; display: block;"></div>
+													<input
+														id="uieJqG#formPedidoVenda:objClassificacaoLoja.hidden"
+														type="hidden" value="">
+												</div></td>
+											<td><div class="dACpt"
+													style="visibility: visible; display: block;">
+													<label for="uieJqG#formPedidoVenda:objLoja"
+														class="labelCpts"
+														style="width: 113px; visibility: visible; display: block;">Loja
+														Venda:</label><input id="uieJqG#formPedidoVenda:objLoja"
+														type="text" size="40" component="autoComplete"
+														class="iACpt" maxlength="30" params="lojas"
+														optionvalue="/lojas/arrayList/comboLojaDto@ident"
+														optionvalueref="/pedidoVendaDto@identLoja"
+														optiontext="/lojas/arrayList/comboLojaDto@descBreve"
+														clearbuttonvisible="true" remotesearch="true"
+														optiontextref="/pedidoVendaDto@descLoja"
+														node="/lojas/arrayList/comboLojaDto" usedomainxml="true"
+														searchparameter="HieEmpXLojPedVda.addQueryStringDefault"
+														targetaction="jretail.action.FiltroHierarquiaEmpresaXLojaAction"
+														targetmethod="consultarLojaExigindoPrivilegio" helpkey="6"
+														editable="s" isvisible="true"
+														onlydeveloperfunction="false" tabindex="3"
+														parserattributes="/lojas/arrayList/comboLojaDto@ident::/pedidoVendaDto@identLoja,
+									  /lojas/arrayList/comboLojaDto@descBreve::/pedidoVendaDto@descLoja"
+														autocompleteelement="true" mask="*" childfield="true"
+														onkeypress="return AutoCompleteRsis.check(this,event, &#39;*&#39;);"
+														data-ui="uieJqG" onmouseover="" onmouseout=""
+														onfocus="return removeCaracs(this,&#39;*&#39;);"
+														onkeyup="return AutoCompleteRsis.start(this,event);"
+														onkeydown="return AutoCompleteRsis.checkDwn(this, event);"
+														tabindexvalue="3"
+														style="visibility: visible; display: block;">
+													<div class="slACpt "
+														id="uieJqG#formPedidoVenda:objLoja.btnSearch"
+														autocompleteelement="true" tabindex="-1"
+														onmouseover="return $W.Rsis.Tip.show(this, event,&#39;Selecionar Registro&#39;,190);"
+														onmouseout="return $W.Rsis.Tip.hidden(this)"
+														remotesearch="true"
+														onclick="return AutoComplete.searchOpen(this,event);"
+														data-ui="uieJqG" style="cursor: pointer;"></div>
+													<div id="uieJqG#formPedidoVenda:objLoja.clrBtn"
+														class="clrACpt "
+														onmouseover="return $W.Rsis.Tip.show(this, event,&#39;Limpar campo&#39;,120);"
+														onmouseout="return $W.Rsis.Tip.hidden(this)"
+														autocompleteelement="true" tabindex="-1"
+														onclick="SelectBox.close(this,event); return clearAutoComplete(this);"
+														data-ui="uieJqG"
+														style="cursor: pointer; visibility: visible; display: block;"></div>
+													<input id="uieJqG#formPedidoVenda:objLoja.hidden"
+														type="hidden" value="">
+												</div></td>
+										</tr>
+										<tr>
+											<td></td>
+											<td colspan="2"><span
+												id="uieJqG#formPedidoVenda:objLinkClassificacaoLoja"
+												component="label" class="label"
+												onclick="return $W.SelectBox.close(this, event);"
+												onlydeveloperfunction="false" isvisible="true"
+												data-ui="uieJqG"
+												onblur="return SelectBox.close(this, event);"
+												style="visibility: visible; display: block;"></span></td>
+										</tr>
+										<tr>
+											<td><div class="dACpt"
+													style="visibility: visible; display: block;">
+													<label for="uieJqG#formPedidoVenda:objTipoVenda"
+														class="labelCpts"
+														style="width: 85px; visibility: visible; display: block;">Tipo
+														Venda:</label><input id="uieJqG#formPedidoVenda:objTipoVenda"
+														type="text" size="25" component="autoComplete"
+														class="iACpt" maxlength="30" params="tipoVendas"
+														optionvalue="/tipoVendas/arrayList/tipoVenda@ident"
+														optionvalueref="/pedidoVendaDto@identTipoVenda"
+														optiontext="/tipoVendas/arrayList/tipoVenda@descBreve"
+														clearbuttonvisible="true" remotesearch="false"
+														optiontextref="/pedidoVendaDto@descTipoVenda"
+														node="/tipoVendas/arrayList/tipoVenda"
+														xmlsearchtemplate="templateTipoVenda"
+														searchparameter="HieEmpXLojPedVda.addQueryStringIndSomenteVigenteAtivo"
+														targetaction="jretail.venda.pedido.action.TipoVendaAction"
+														targetmethod="consultarTipoVenda" editable="s"
+														isvisible="true" onlydeveloperfunction="false"
+														tabindex="4"
+														parserattributes="/tipoVendas/arrayList/tipoVenda@ident::/pedidoVendaDto@identTipoVenda,
+								      /tipoVendas/arrayList/tipoVenda@descBreve::/pedidoVendaDto@descTipoVenda"
+														autocompleteelement="true" mask="*" childfield="true"
+														onkeypress="return AutoCompleteRsis.check(this,event, &#39;*&#39;);"
+														data-ui="uieJqG" onmouseover="" onmouseout=""
+														onfocus="return removeCaracs(this,&#39;*&#39;);"
+														onkeyup="return AutoCompleteRsis.start(this,event);"
+														onkeydown="return AutoCompleteRsis.checkDwn(this, event);"
+														tabindexvalue="4"
+														style="visibility: visible; display: block;">
+													<div class="slACpt "
+														id="uieJqG#formPedidoVenda:objTipoVenda.btnSearch"
+														autocompleteelement="true" tabindex="-1"
+														onmouseover="return $W.Rsis.Tip.show(this, event,&#39;Selecionar Registro&#39;,190);"
+														onmouseout="return $W.Rsis.Tip.hidden(this)"
+														remotesearch="false"
+														onclick="return AutoComplete.viewOptions(this,event);"
+														data-ui="uieJqG" style="cursor: pointer;"></div>
+													<div id="uieJqG#formPedidoVenda:objTipoVenda.clrBtn"
+														class="clrACpt "
+														onmouseover="return $W.Rsis.Tip.show(this, event,&#39;Limpar campo&#39;,120);"
+														onmouseout="return $W.Rsis.Tip.hidden(this)"
+														autocompleteelement="true" tabindex="-1"
+														onclick="SelectBox.close(this,event); return clearAutoComplete(this);"
+														data-ui="uieJqG"
+														style="cursor: pointer; visibility: visible; display: block;"></div>
+													<input id="uieJqG#formPedidoVenda:objTipoVenda.hidden"
+														type="hidden" value="">
+												</div></td>
+											<td><div class="dACpt"
+													style="visibility: visible; display: block;">
+													<label for="uieJqG#formPedidoVenda:objUsuario"
+														class="labelCpts"
+														style="width: 85px; visibility: visible; display: block;">Usuário:</label><input
+														id="uieJqG#formPedidoVenda:objUsuario" type="text"
+														size="25" component="autoComplete" class="iACpt"
+														maxlength="40" params="usuarios"
+														optionvalue="/usuarios/arrayList/usuarioDto@identUsuario"
+														optionvalueref="/pedidoVendaDto@identUsuarioPedidoCriou"
+														optiontext="/usuarios/arrayList/usuarioDto@descUsuario"
+														clearbuttonvisible="true" remotesearch="true"
+														optiontextref="/pedidoVendaDto@nomeCompletoUsuarioCriou"
+														node="/usuarios/arrayList/usuarioDto" usedomainxml="true"
+														targetaction="jretail.venda.pedido.action.ConsultaPedidoVendaAction"
+														targetmethod="consultarUsuario" helpkey="8" editable="s"
+														isvisible="true" onlydeveloperfunction="false"
+														tabindex="5"
+														parserattributes="/usuarios/arrayList/usuarioDto@identUsuario::/pedidoVendaDto@identUsuarioPedidoCriou,
+									  /usuarios/arrayList/usuarioDto@descUsuario::/pedidoVendaDto@nomeCompletoUsuarioCriou"
+														autocompleteelement="true" mask="*" childfield="true"
+														onkeypress="return AutoCompleteRsis.check(this,event, &#39;*&#39;);"
+														data-ui="uieJqG" onmouseover="" onmouseout=""
+														onfocus="return removeCaracs(this,&#39;*&#39;);"
+														onkeyup="return AutoCompleteRsis.start(this,event);"
+														onkeydown="return AutoCompleteRsis.checkDwn(this, event);"
+														tabindexvalue="5"
+														style="visibility: visible; display: block;">
+													<div class="slACpt "
+														id="uieJqG#formPedidoVenda:objUsuario.btnSearch"
+														autocompleteelement="true" tabindex="-1"
+														onmouseover="return $W.Rsis.Tip.show(this, event,&#39;Selecionar Registro&#39;,190);"
+														onmouseout="return $W.Rsis.Tip.hidden(this)"
+														remotesearch="true"
+														onclick="return AutoComplete.searchOpen(this,event);"
+														data-ui="uieJqG" style="cursor: pointer;"></div>
+													<div id="uieJqG#formPedidoVenda:objUsuario.clrBtn"
+														class="clrACpt "
+														onmouseover="return $W.Rsis.Tip.show(this, event,&#39;Limpar campo&#39;,120);"
+														onmouseout="return $W.Rsis.Tip.hidden(this)"
+														autocompleteelement="true" tabindex="-1"
+														onclick="SelectBox.close(this,event); return clearAutoComplete(this);"
+														data-ui="uieJqG"
+														style="cursor: pointer; visibility: visible; display: block;"></div>
+													<input id="uieJqG#formPedidoVenda:objUsuario.hidden"
+														type="hidden" value="">
+												</div></td>
+											<td><div class="dACpt"
+													style="visibility: visible; display: block;">
+													<label for="uieJqG#formPedidoVenda:objStatusPedidoVenda"
+														class="labelCpts"
+														style="width: 113px; visibility: visible; display: block;">Status
+														Pedido Venda:</label><input
+														id="uieJqG#formPedidoVenda:objStatusPedidoVenda"
+														type="text" size="40" component="autoComplete"
+														class="iACpt" maxlength="20" params="statusPedidoVendas"
+														optionvalue="/statusPedidoVendas/arrayList/statusPedidoVenda@ident"
+														optionvalueref="/pedidoVendaDto@identStatusPedidoVenda"
+														optiontext="/statusPedidoVendas/arrayList/statusPedidoVenda@descBreve"
+														clearbuttonvisible="true" remotesearch="false"
+														optiontextref="/pedidoVendaDto@descBreveStatusPedidoVenda"
+														node="/statusPedidoVendas/arrayList/statusPedidoVenda"
+														searchparameter="HieEmpXLojPedVda.addQueryStringIndSomenteVigenteAtivo"
+														targetaction="jretail.venda.pedido.action.StatusPedidoVendaAction"
+														targetmethod="consultarStatusPedidoVenda" helpkey="10"
+														editable="i;u;s" isvisible="true" mandatory="i;u"
+														onlydeveloperfunction="false" tabindex="6"
+														parserattributes="/statusPedidoVendas/arrayList/statusPedidoVenda@ident::/pedidoVendaDto@identStatusPedidoVenda,
+								      /statusPedidoVendas/arrayList/statusPedidoVenda@descBreve::/pedidoVendaDto@descBreveStatusPedidoVenda"
+														autocompleteelement="true" mask="*" childfield="true"
+														onkeypress="return AutoCompleteRsis.check(this,event, &#39;*&#39;);"
+														data-ui="uieJqG" onmouseover="" onmouseout=""
+														onfocus="return removeCaracs(this,&#39;*&#39;);"
+														onkeyup="return AutoCompleteRsis.start(this,event);"
+														onkeydown="return AutoCompleteRsis.checkDwn(this, event);"
+														tabindexvalue="6"
+														style="visibility: visible; display: block;">
+													<div class="slACpt "
+														id="uieJqG#formPedidoVenda:objStatusPedidoVenda.btnSearch"
+														autocompleteelement="true" tabindex="-1"
+														onmouseover="return $W.Rsis.Tip.show(this, event,&#39;Selecionar Registro&#39;,190);"
+														onmouseout="return $W.Rsis.Tip.hidden(this)"
+														remotesearch="false"
+														onclick="return AutoComplete.viewOptions(this,event);"
+														data-ui="uieJqG" style="cursor: pointer;"></div>
+													<div
+														id="uieJqG#formPedidoVenda:objStatusPedidoVenda.clrBtn"
+														class="clrACpt "
+														onmouseover="return $W.Rsis.Tip.show(this, event,&#39;Limpar campo&#39;,120);"
+														onmouseout="return $W.Rsis.Tip.hidden(this)"
+														autocompleteelement="true" tabindex="-1"
+														onclick="SelectBox.close(this,event); return clearAutoComplete(this);"
+														data-ui="uieJqG"
+														style="cursor: pointer; visibility: visible; display: block;"></div>
+													<input
+														id="uieJqG#formPedidoVenda:objStatusPedidoVenda.hidden"
+														type="hidden" value="">
+												</div></td>
+										</tr>
+										<tr>
+											<td><div class="dACpt"
+													style="visibility: visible; display: block;">
+													<label for="uieJqG#formPedidoVenda:objIndPessoaFisica"
+														class="labelCpts"
+														style="width: 85px; visibility: visible; display: block;">Pessoa
+														Física:</label><input
+														id="uieJqG#formPedidoVenda:objIndPessoaFisica" type="text"
+														size="5" component="autoComplete" class="iACpt"
+														maxlength="3" params="indSimNao"
+														optionvalue="/indSimNao/arrayList/enumItem@optionValue"
+														optionvalueref="/pedidoVendaDto@peIndPessoaFisica"
+														optiontext="/indSimNao/arrayList/enumItem@optionText"
+														clearbuttonvisible="true" remotesearch="false"
+														helpkey="12" editable="s" isvisible="true" mandatory="i;u"
+														renderdeveloper="renderObjIndPessoaFisica"
+														onlydeveloperfunction="false" tabindex="7"
+														parserattributes="/indSimNao/arrayList/enumItem@optionValue::/pedidoVendaDto@peIndPessoaFisica"
+														autocompleteelement="true" mask="*" childfield="true"
+														onkeypress="return AutoCompleteRsis.check(this,event, &#39;*&#39;);"
+														on_change="$W.onChangeComboPessoa" data-ui="uieJqG"
+														onmouseover="" onmouseout=""
+														onfocus="return removeCaracs(this,&#39;*&#39;);"
+														onkeyup="return AutoCompleteRsis.start(this,event);"
+														onkeydown="return AutoCompleteRsis.checkDwn(this, event);"
+														tabindexvalue="7"
+														style="visibility: visible; display: block;">
+													<div class="slACpt "
+														id="uieJqG#formPedidoVenda:objIndPessoaFisica.btnSearch"
+														autocompleteelement="true" tabindex="-1"
+														onmouseover="return $W.Rsis.Tip.show(this, event,&#39;Selecionar Registro&#39;,190);"
+														onmouseout="return $W.Rsis.Tip.hidden(this)"
+														remotesearch="false"
+														onclick="return AutoComplete.viewOptions(this,event);"
+														data-ui="uieJqG" style="cursor: pointer;"></div>
+													<div id="uieJqG#formPedidoVenda:objIndPessoaFisica.clrBtn"
+														class="clrACpt " clearbuttonexecute="cleanIndPf"
+														onmouseover="return $W.Rsis.Tip.show(this, event,&#39;Limpar campo&#39;,120);"
+														onmouseout="return $W.Rsis.Tip.hidden(this)"
+														autocompleteelement="true" tabindex="-1"
+														onclick="SelectBox.close(this,event); return clearAutoComplete(this);"
+														data-ui="uieJqG"
+														style="cursor: pointer; visibility: visible; display: block;"></div>
+													<input
+														id="uieJqG#formPedidoVenda:objIndPessoaFisica.hidden"
+														type="hidden" value="">
+												</div></td>
+											<td><div
+													id="uieJqG#formPedidoVenda:j_id_jsp_1255727451_18"
+													class="dIpt" aligncontent="left" style="width: 88px">
+													<span id="uieJqG#formPedidoVenda:labelCpf"
+														component="label" helpkey="13" class="label"
+														onclick="return $W.SelectBox.close(this, event);"
+														onlydeveloperfunction="false" isvisible="true"
+														data-ui="uieJqG"
+														onblur="return SelectBox.close(this, event);"
+														style="visibility: visible; display: block;">CPF:</span><span
+														id="uieJqG#formPedidoVenda:labelCnpj" component="label"
+														helpkey="14" class="label"
+														onclick="return $W.SelectBox.close(this, event);"
+														onlydeveloperfunction="false" isvisible="true"
+														data-ui="uieJqG"
+														onblur="return SelectBox.close(this, event);"
+														style="visibility: hidden; display: none;">CNPJ:</span>
+												</div>
+												<div class="dIpt">
+													<input id="uieJqG#formPedidoVenda:inputCpfCnpj"
+														class="iptRdy" textalign="left" component="input"
+														size="26" type="text" maxlength="14"
+														node="/pedidoVendaDto@peCpfCnpj" helpkey="15" editable="s"
+														isvisible="true" onlydeveloperfunction="false"
+														tabindex="-1" mask="000.000.000-00"
+														onkeypress="return validateMask(event, &#39;000.000.000-00&#39;);"
+														startevent="s" data-ui="uieJqG"
+														onblur="return SelectBox.close(this, event);"
+														onfocus=" return removeCaracs(this,&#39;000.000.000-00&#39;);"
+														onclick="SelectBox.close(this, event);" tabindexvalue="8"
+														onmouseover="" onmouseout="" readonly=""
+														style="cursor: default; text-align: left; visibility: visible; display: block;">
+												</div></td>
+											<td><div
+													id="uieJqG#formPedidoVenda:j_id_jsp_1255727451_23"
+													class="dIpt" aligncontent="left" style="width: 116px">
+													<span id="uieJqG#formPedidoVenda:labelPeNomeRazaoSocial"
+														component="label" helpkey="18" class="label"
+														onclick="return $W.SelectBox.close(this, event);"
+														onlydeveloperfunction="false" isvisible="true"
+														data-ui="uieJqG"
+														onblur="return SelectBox.close(this, event);"
+														style="visibility: visible; display: block;">Nome/Razão
+														Social:</span>
+												</div>
+												<div class="dIpt">
+													<input id="uieJqG#formPedidoVenda:inputPeNomeRazaoSocial"
+														class="ipt" textalign="left" component="input" size="40"
+														type="text" maxlength="100"
+														node="/pedidoVendaDto@peNomeRazaoSocial" helpkey="20"
+														editable="i;s" isvisible="true"
+														onlydeveloperfunction="false" tabindex="9" mask="*"
+														onkeypress="return validateMask(event, &#39;*&#39;);"
+														uppercase="true"
+														style="text-transform: uppercase; cursor: pointer; text-align: left; visibility: visible; display: block;"
+														startevent="s" data-ui="uieJqG"
+														onblur="SelectBox.close(this,event); return blurInputToXML(this, event);"
+														onfocus=" return removeCaracs(this,&#39;*&#39;);"
+														onclick="SelectBox.close(this, event);" tabindexvalue="9"
+														onmouseover="" onmouseout="">
+												</div></td>
+										</tr>
+										<tr>
+											<td colspan="2"><div class="dACpt"
+													style="visibility: visible; display: block;">
+													<label for="uieJqG#formPedidoVenda:autoCompleteProduto"
+														class="labelCpts"
+														style="width: 85px; visibility: visible; display: block;">Produto:</label><input
+														id="uieJqG#formPedidoVenda:autoCompleteProduto"
+														type="text" size="85" component="autoComplete"
+														class="iACpt" maxlength="40" params="produtos"
+														optionvalue="/produtos/arrayList/produto@ident"
+														optionvalueref="/pedidoVendaDto@identProduto"
+														optiontext="/produtos/arrayList/produto@codDescricaoProduto"
+														clearbuttonvisible="true" remotesearch="true"
+														optiontextref="/pedidoVendaDto@codDescricaoProduto"
+														node="/produtos/arrayList/produto"
+														xmlsearchtemplate="templateProduto"
+														searchparameter="addQueryStringProduto"
+														targetaction="jretail.adm.action.ProdutoAction"
+														targetmethod="consultarProduto2" focus="true" helpkey="4"
+														editable="i;s" isvisible="true" mandatory="i"
+														onlydeveloperfunction="false" tabindex="10"
+														parserattributes="/produtos/arrayList/produto@ident::/pedidoVendaDto@identProduto, 
+										 /produtos/arrayList/produto@codDescricaoProduto::/pedidoVendaDto@codDescricaoProduto"
+														autocompleteelement="true" mask="*"
+														url="/jretail/jretail.adm/view/jsp/consultaProduto.jsf"
+														searchvalue="/produto@codigo" modalformfield="formProduto"
+														childfield="true"
+														onkeypress="return AutoCompleteRsis.check(this,event, &#39;*&#39;);"
+														style="text-transform: uppercase; visibility: visible; display: block;"
+														uppercase="true" data-ui="uieJqG" onmouseover=""
+														onmouseout=""
+														onfocus="return removeCaracs(this,&#39;*&#39;);"
+														onkeyup="return AutoCompleteRsis.start(this,event);"
+														onkeydown="return AutoCompleteRsis.checkDwn(this, event);"
+														tabindexvalue="10">
+													<div class="slACpt "
+														id="uieJqG#formPedidoVenda:autoCompleteProduto.btnSearch"
+														autocompleteelement="true" tabindex="-1"
+														onmouseover="return $W.Rsis.Tip.show(this, event,&#39;Selecionar Registro&#39;,190);"
+														onmouseout="return $W.Rsis.Tip.hidden(this)"
+														remotesearch="true"
+														onclick="return AutoComplete.searchOpen(this,event);"
+														data-ui="uieJqG" style="cursor: pointer;"></div>
+													<div id="uieJqG#formPedidoVenda:autoCompleteProduto.clrBtn"
+														class="clrACpt "
+														onmouseover="return $W.Rsis.Tip.show(this, event,&#39;Limpar campo&#39;,120);"
+														onmouseout="return $W.Rsis.Tip.hidden(this)"
+														autocompleteelement="true" tabindex="-1"
+														onclick="SelectBox.close(this,event); return clearAutoComplete(this);"
+														data-ui="uieJqG"
+														style="cursor: pointer; visibility: visible; display: block;"></div>
+													<div
+														id="uieJqG#formPedidoVenda:autoCompleteProduto.addButton"
+														class="addACpt " tabindex="-1" autocompleteelement="true"
+														onmouseover="return $W.Rsis.Tip.show(this, event,&#39;Novo&#39;,40);"
+														onmouseout="return $W.Rsis.Tip.hidden(this)"
+														onclick="SelectBox.close(this,event); return AutoComplete.openWindow(this);"
+														data-ui="uieJqG"
+														style="cursor: pointer; visibility: visible; display: block;"></div>
+													<input
+														id="uieJqG#formPedidoVenda:autoCompleteProduto.hidden"
+														type="hidden" value="">
+												</div></td>
+											<td><div class="dACpt"
+													style="visibility: visible; display: block;">
+													<label for="uieJqG#formPedidoVenda:autoCompleteServico"
+														class="labelCpts"
+														style="width: 112px; visibility: visible; display: block;">Serviço:</label><input
+														id="uieJqG#formPedidoVenda:autoCompleteServico"
+														type="text" size="40" component="autoComplete"
+														class="iACpt" maxlength="40" params="servicos"
+														optionvalue="/servicos/arrayList/servico@ident"
+														optionvalueref="/pedidoVendaDto@identServico"
+														optiontext="/servicos/arrayList/servico@codDescricaoServico"
+														clearbuttonvisible="true" remotesearch="true"
+														optiontextref="/pedidoVendaDto@codDescricaoServico"
+														node="/servicos/arrayList/servico"
+														xmlsearchtemplate="templateServico"
+														searchparameter="addQueryStringServico"
+														targetaction="jretail.adm.action.ServicoAction"
+														targetmethod="consultarServicoComboCodDesc" focus="true"
+														helpkey="5" editable="i;s" isvisible="true" mandatory="i"
+														onlydeveloperfunction="false" tabindex="11"
+														parserattributes="/servicos/arrayList/servico@ident::/pedidoVendaDto@identServico,
+		  							 /servicos/arrayList/servico@codDescricaoServico::/pedidoVendaDto@codDescricaoServico"
+														autocompleteelement="true" mask="*"
+														url="/jretail/jretail.adm/view/jsp/consultaServico.jsf"
+														searchvalue="/servico@codigo" modalformfield="formServico"
+														childfield="true"
+														onkeypress="return AutoCompleteRsis.check(this,event, &#39;*&#39;);"
+														data-ui="uieJqG" onmouseover="" onmouseout=""
+														onfocus="return removeCaracs(this,&#39;*&#39;);"
+														onkeyup="return AutoCompleteRsis.start(this,event);"
+														onkeydown="return AutoCompleteRsis.checkDwn(this, event);"
+														tabindexvalue="11"
+														style="visibility: visible; display: block;">
+													<div class="slACpt "
+														id="uieJqG#formPedidoVenda:autoCompleteServico.btnSearch"
+														autocompleteelement="true" tabindex="-1"
+														onmouseover="return $W.Rsis.Tip.show(this, event,&#39;Selecionar Registro&#39;,190);"
+														onmouseout="return $W.Rsis.Tip.hidden(this)"
+														remotesearch="true"
+														onclick="return AutoComplete.searchOpen(this,event);"
+														data-ui="uieJqG" style="cursor: pointer;"></div>
+													<div id="uieJqG#formPedidoVenda:autoCompleteServico.clrBtn"
+														class="clrACpt "
+														onmouseover="return $W.Rsis.Tip.show(this, event,&#39;Limpar campo&#39;,120);"
+														onmouseout="return $W.Rsis.Tip.hidden(this)"
+														autocompleteelement="true" tabindex="-1"
+														onclick="SelectBox.close(this,event); return clearAutoComplete(this);"
+														data-ui="uieJqG"
+														style="cursor: pointer; visibility: visible; display: block;"></div>
+													<div
+														id="uieJqG#formPedidoVenda:autoCompleteServico.addButton"
+														class="addACpt " tabindex="-1" autocompleteelement="true"
+														onmouseover="return $W.Rsis.Tip.show(this, event,&#39;Novo&#39;,40);"
+														onmouseout="return $W.Rsis.Tip.hidden(this)"
+														onclick="SelectBox.close(this,event); return AutoComplete.openWindow(this);"
+														data-ui="uieJqG"
+														style="cursor: pointer; visibility: visible; display: block;"></div>
+													<input
+														id="uieJqG#formPedidoVenda:autoCompleteServico.hidden"
+														type="hidden" value="">
+												</div></td>
+										</tr>
+										<tr>
+											<td><div class="dACpt"
+													style="visibility: visible; display: block;">
+													<label
+														for="uieJqG#formPedidoVenda:autoCompleteFlagTipoPedidoVenda"
+														class="labelCpts"
+														style="width: 85px; visibility: visible; display: block;">Tipo
+														Pedido:</label><input
+														id="uieJqG#formPedidoVenda:autoCompleteFlagTipoPedidoVenda"
+														type="text" size="25" component="autoComplete"
+														class="iACpt" maxlength="23" params="flagTipoPedidoVendas"
+														optionvalue="/flagTipoPedidoVendas/arrayList/enumItem@optionValue"
+														optionvalueref="/pedidoVendaDto@flagTipoPedido"
+														optiontext="/flagTipoPedidoVendas/arrayList/enumItem@optionText"
+														clearbuttonvisible="true" remotesearch="false" helpkey="6"
+														editable="i;u;s" isvisible="true"
+														onlydeveloperfunction="false" tabindex="12"
+														parserattributes="/flagTipoPedidoVendas/arrayList/enumItem@optionValue::/pedidoVendaDto@flagTipoPedido"
+														autocompleteelement="true" mask="*" childfield="true"
+														onkeypress="return AutoCompleteRsis.check(this,event, &#39;*&#39;);"
+														data-ui="uieJqG" onmouseover="" onmouseout=""
+														onfocus="return removeCaracs(this,&#39;*&#39;);"
+														onkeyup="return AutoCompleteRsis.start(this,event);"
+														onkeydown="return AutoCompleteRsis.checkDwn(this, event);"
+														tabindexvalue="12"
+														style="visibility: visible; display: block;">
+													<div class="slACpt "
+														id="uieJqG#formPedidoVenda:autoCompleteFlagTipoPedidoVenda.btnSearch"
+														autocompleteelement="true" tabindex="-1"
+														remotesearch="false"
+														onclick="return AutoComplete.viewOptions(this,event);"
+														data-ui="uieJqG" style="cursor: pointer;"></div>
+													<div
+														id="uieJqG#formPedidoVenda:autoCompleteFlagTipoPedidoVenda.clrBtn"
+														class="clrACpt " autocompleteelement="true" tabindex="-1"
+														onclick="SelectBox.close(this,event); return clearAutoComplete(this);"
+														data-ui="uieJqG"
+														style="cursor: pointer; visibility: visible; display: block;"></div>
+													<input
+														id="uieJqG#formPedidoVenda:autoCompleteFlagTipoPedidoVenda.hidden"
+														type="hidden" value="">
+												</div></td>
+											<td><div class="dACpt"
+													style="visibility: visible; display: block;">
+													<label for="uieJqG#formPedidoVenda:objLojaReserva"
+														class="labelCpts"
+														style="width: 85px; visibility: visible; display: block;">Loja
+														Reserva:</label><input id="uieJqG#formPedidoVenda:objLojaReserva"
+														type="text" size="25" component="autoComplete"
+														class="iACpt" maxlength="30" params="lojas"
+														optionvalue="/lojas/arrayList/loja@ident"
+														optionvalueref="/pedidoVendaDto@identLojaReserva"
+														optiontext="/lojas/arrayList/loja@descBreve"
+														clearbuttonvisible="true" remotesearch="true"
+														optiontextref="/pedidoVendaDto@descLojaReserva"
+														node="/lojas/arrayList/loja" usedomainxml="true"
+														targetaction="jretail.action.LojaAction"
+														targetmethod="consultarLoja" helpkey="6" editable="s"
+														isvisible="true" onlydeveloperfunction="false"
+														tabindex="13"
+														parserattributes="/lojas/arrayList/loja@ident::/pedidoVendaDto@identLojaReserva,
+									  /lojas/arrayList/loja@descBreve::/pedidoVendaDto@descLojaReserva"
+														autocompleteelement="true" mask="*" childfield="true"
+														onkeypress="return AutoCompleteRsis.check(this,event, &#39;*&#39;);"
+														data-ui="uieJqG" onmouseover="" onmouseout=""
+														onfocus="return removeCaracs(this,&#39;*&#39;);"
+														onkeyup="return AutoCompleteRsis.start(this,event);"
+														onkeydown="return AutoCompleteRsis.checkDwn(this, event);"
+														tabindexvalue="13"
+														style="visibility: visible; display: block;">
+													<div class="slACpt "
+														id="uieJqG#formPedidoVenda:objLojaReserva.btnSearch"
+														autocompleteelement="true" tabindex="-1"
+														onmouseover="return $W.Rsis.Tip.show(this, event,&#39;Selecionar Registro&#39;,190);"
+														onmouseout="return $W.Rsis.Tip.hidden(this)"
+														remotesearch="true"
+														onclick="return AutoComplete.searchOpen(this,event);"
+														data-ui="uieJqG" style="cursor: pointer;"></div>
+													<div id="uieJqG#formPedidoVenda:objLojaReserva.clrBtn"
+														class="clrACpt "
+														onmouseover="return $W.Rsis.Tip.show(this, event,&#39;Limpar campo&#39;,120);"
+														onmouseout="return $W.Rsis.Tip.hidden(this)"
+														autocompleteelement="true" tabindex="-1"
+														onclick="SelectBox.close(this,event); return clearAutoComplete(this);"
+														data-ui="uieJqG"
+														style="cursor: pointer; visibility: visible; display: block;"></div>
+													<input id="uieJqG#formPedidoVenda:objLojaReserva.hidden"
+														type="hidden" value="">
+												</div></td>
+											<td><div class="dIpt">
+													<label for="uieJqG#formPedidoVenda:inputDevolucao"
+														class="labelCpts"
+														style="width: 113px; visibility: visible; display: block;">Devolução:</label><input
+														id="uieJqG#formPedidoVenda:inputDevolucao" class="ipt"
+														textalign="left" component="input" size="23" type="text"
+														maxlength="15" node="/pedidoVendaDto@identDevolucaoVenda"
+														focus="true" helpkey="17" editable="s" isvisible="true"
+														onlydeveloperfunction="false" tabindex="14" mask="0"
+														onkeypress="return validateMask(event, &#39;0&#39;);"
+														startevent="s" data-ui="uieJqG"
+														onblur="SelectBox.close(this,event); return blurInputToXML(this, event);"
+														onfocus=" return removeCaracs(this,&#39;0&#39;);"
+														onclick="SelectBox.close(this, event);" tabindexvalue="14"
+														onmouseover="" onmouseout=""
+														style="cursor: pointer; text-align: left; visibility: visible; display: block;">
+												</div></td>
+										</tr>
+										<tr>
+											<td><div class="dIpt">
+													<label for="uieJqG#formPedidoVenda:inputPedido"
+														class="labelCpts"
+														style="width: 85px; visibility: visible; display: block;">Pedido:</label><input
+														id="uieJqG#formPedidoVenda:inputPedido" class="ipt"
+														textalign="left" component="input" size="17" type="text"
+														maxlength="15" node="/pedidoVendaDto@identPedidoVenda"
+														focus="true" helpkey="17" editable="s" isvisible="true"
+														onlydeveloperfunction="false" tabindex="15" mask="0"
+														onkeypress="return validateMask(event, &#39;0&#39;);"
+														startevent="s" data-ui="uieJqG"
+														onblur="SelectBox.close(this,event); return blurInputToXML(this, event);"
+														onfocus=" return removeCaracs(this,&#39;0&#39;);"
+														onclick="SelectBox.close(this, event);" tabindexvalue="15"
+														onmouseover="" onmouseout=""
+														style="cursor: pointer; text-align: left; visibility: visible; display: block;">
+												</div></td>
+											<td><div class="dIpt">
+													<label for="uieJqG#formPedidoVenda:inputDtInitializePeriod"
+														class="labelCpts"
+														style="width: 85px; visibility: visible; display: block;">Início
+														Período:</label><input
+														id="uieJqG#formPedidoVenda:inputDtInitializePeriod"
+														class="ipt" textalign="left" component="input" size="23"
+														type="text" maxlength="10" node="/pedidoVendaDto@dtInicio"
+														helpkey="22" editable="s" isvisible="true"
+														onlydeveloperfunction="false" tabindex="16"
+														mask="date::dd/MM/yyyy"
+														onkeypress="return validateMask(event, &#39;date::dd/MM/yyyy&#39;);"
+														onmouseover="return Rsis.Tip.show(this, event,&#39;29/07/2015&#39;,73);"
+														onmouseout="return Rsis.Tip.hidden(this);" startevent="s"
+														data-ui="uieJqG"
+														onblur="SelectBox.close(this,event); return blurInputToXML(this, event);"
+														onfocus=" return removeCaracs(this,&#39;date::dd/MM/yyyy&#39;);"
+														onclick="SelectBox.close(this, event);" tabindexvalue="16"
+														style="cursor: pointer; visibility: visible; display: block; text-align: left;">
+													<div class="imgCal btnCal"
+														id="uieJqG#formPedidoVenda:inputDtInitializePeriod.calendar"
+														click="$W.displayCalendar($(&#39;uieJqG#formPedidoVenda:inputDtInitializePeriod&#39;),&#39;dd/MM/yyyy&#39;, this);"
+														tabindex="-1" data-ui="uieJqG"
+														style="cursor: pointer; visibility: visible; display: block;"></div>
+												</div></td>
+											<td><div class="dIpt">
+													<label for="uieJqG#formPedidoVenda:inputDtFinalizePeriod"
+														class="labelCpts"
+														style="width: 113px; visibility: visible; display: block;">Fim
+														Período:</label><input
+														id="uieJqG#formPedidoVenda:inputDtFinalizePeriod"
+														class="ipt" textalign="left" component="input" size="23"
+														type="text" maxlength="10" node="/pedidoVendaDto@dtFim"
+														helpkey="24" editable="s" isvisible="true"
+														onlydeveloperfunction="false" tabindex="17"
+														mask="date::dd/MM/yyyy"
+														onkeypress="return validateMask(event, &#39;date::dd/MM/yyyy&#39;);"
+														onmouseover="return Rsis.Tip.show(this, event,&#39;29/07/2015&#39;,73);"
+														onmouseout="return Rsis.Tip.hidden(this);" startevent="s"
+														data-ui="uieJqG"
+														onblur="SelectBox.close(this,event); return blurInputToXML(this, event);"
+														onfocus=" return removeCaracs(this,&#39;date::dd/MM/yyyy&#39;);"
+														onclick="SelectBox.close(this, event);" tabindexvalue="17"
+														style="cursor: pointer; visibility: visible; display: block; text-align: left;">
+													<div class="imgCal btnCal"
+														id="uieJqG#formPedidoVenda:inputDtFinalizePeriod.calendar"
+														click="$W.displayCalendar($(&#39;uieJqG#formPedidoVenda:inputDtFinalizePeriod&#39;),&#39;dd/MM/yyyy&#39;, this);"
+														tabindex="-1" data-ui="uieJqG"
+														style="cursor: pointer; visibility: visible; display: block;"></div>
+												</div></td>
+										</tr>
+									</tbody>
+								</table>
+							</fieldset>
+							<div style="width: 99.9%">
+								<div class="tlbar"
+									id="uieJqG#formPedidoVenda:toolbarPedidoVenda"
+									component="toolBar"
+									callbackinjectionafterrender="setTotalPedidosDto"
+									setparamsmodal="ConsultaPedidoVenda.SetParamsModal"
+									datatable="uieJqG#formPedidoVenda:dataTablePedidoVenda"
+									datascroller="uieJqG#formPedidoVenda:dataScrollerPedidoVenda"
+									data-ui="uieJqG">
+									<div id="uieJqG#formPedidoVenda:toolbarPedidoVenda.bts"
+										class="tlbarBts">
+										<input type="button" component="toolBarButton"
+											id="uieJqG#formPedidoVenda:toolbarPedidoVenda.btnHelp"
+											class="tbBtStd tbBtHlp" onclick="return $W.Crud.help(this);"
+											style="float: left; visibility: visible; display: block;"
+											hint="Ajuda"
+											onmouseover="return Rsis.Tip.show(this, event,&#39;Ajuda&#39;,4);"
+											onmouseout="return Rsis.Tip.hidden(this);" isvisible="true"
+											enablebutton="false" tabindex="0" data-ui="uieJqG"
+											help="false" helpkeys="false"><input type="button"
+											component="toolBarButton"
+											id="uieJqG#formPedidoVenda:toolbarPedidoVenda.btnConfirm"
+											class="tbBtStd tbBtCfm"
+											onclick="return $W.Crud.confirm(this);"
+											onkeypress="if (event.keyCode==13){$W.Crud.confirm(this);}"
+											style="float: right; visibility: visible; display: block;"
+											hint="Confirmar"
+											onmouseover="return Rsis.Tip.show(this, event,&#39;Confirmar&#39;,4);"
+											onmouseout="return Rsis.Tip.hidden(this);" isvisible="true"
+											enablebutton="false" tabindex="0" data-ui="uieJqG"
+											help="false" helpkeys="false"><input type="button"
+											component="toolBarButton"
+											id="uieJqG#formPedidoVenda:toolbarPedidoVenda.btnEdit"
+											class="tbBtStd tbBtEdt tbBtDsd"
+											onclick="return $W.Crud.edit(this);"
+											onkeypress="if (event.keyCode==13){$W.Crud.edit(this);}"
+											style="float: right; visibility: visible; display: block;"
+											hint="Editar"
+											onmouseover="return Rsis.Tip.show(this, event,&#39;Editar&#39;,4);"
+											onmouseout="return Rsis.Tip.hidden(this);" isvisible="true"
+											enablebutton="false" tabindex="0" disabled=""
+											data-ui="uieJqG" help="false" helpkeys="false"><input
+											type="button" component="toolBarButton"
+											id="uieJqG#formPedidoVenda:toolbarPedidoVenda.btnCreate"
+											class="tbBtStd tbBtInc"
+											onclick="return $W.Crud.create(this);"
+											onkeypress="if (event.keyCode==13){$W.Crud.create(this);}"
+											style="float: right; visibility: visible; display: block;"
+											hint="Novo"
+											onmouseover="return Rsis.Tip.show(this, event,&#39;Novo&#39;,4);"
+											onmouseout="return Rsis.Tip.hidden(this);" isvisible="true"
+											enablebutton="false" tabindex="0" data-ui="uieJqG"
+											help="false" helpkeys="false"><input type="button"
+											component="toolBarButton"
+											id="uieJqG#formPedidoVenda:toolbarPedidoVenda.btnSearch"
+											class="tbBtStd tbBtSrh tbBtDsd"
+											onclick="ConsultaPedidoVenda.search(this);"
+											onkeypress="if (event.keyCode==13){$W.Crud.search(this);}"
+											style="float: right; visibility: visible; display: block;"
+											hint="Pesquisar"
+											onmouseover="return Rsis.Tip.show(this, event,&#39;Pesquisar&#39;,4);"
+											onmouseout="return Rsis.Tip.hidden(this);" isvisible="true"
+											enablebutton="false" tabindex="0" disabled=""
+											data-ui="uieJqG" help="false" helpkeys="false"><input
+											type="button" component="toolBarButton"
+											id="uieJqG#formPedidoVenda:toolbarPedidoVenda.btnSelect"
+											class="tbBtStd tbBtSlt tbBtDsd"
+											onclick="return $W.Crud.select(this, event);"
+											onkeypress="if (event.keyCode==13){$W.Crud.select(this, event);}"
+											style="float: right; visibility: visible; display: block;"
+											hint="Selecionar Registro"
+											onmouseover="return Rsis.Tip.show(this, event,&#39;Selecionar Registro&#39;,4);"
+											onmouseout="return Rsis.Tip.hidden(this);" isvisible="true"
+											enablebutton="false" tabindex="0" disabled=""
+											data-ui="uieJqG" help="false" helpkeys="false"><input
+											type="button" component="toolBarButton"
+											id="uieJqG#formPedidoVenda:toolbarPedidoVenda.btnUndo"
+											class="tbBtStd tbBtUdo"
+											onclick="ConsultaPedidoVenda.undo(this);"
+											onkeypress="if (event.keyCode==13){$W.Crud.undo(this);}"
+											style="float: right; visibility: visible; display: block;"
+											hint="Desfazer ação"
+											onmouseover="return Rsis.Tip.show(this, event,&#39;Desfazer ação&#39;,4);"
+											onmouseout="return Rsis.Tip.hidden(this);" isvisible="true"
+											enablebutton="false" tabindex="0" data-ui="uieJqG"
+											help="false" helpkeys="false"><input type="button"
+											component="toolBarButton"
+											id="uieJqG#formPedidoVenda:toolbarPedidoVenda.btnClose"
+											class="tbBtStd tbBtCls"
+											onclick="return $W.Crud.close(this, event);"
+											onkeypress="if (event.keyCode==13){$W.Crud.close(this, event);}"
+											style="float: right; visibility: visible; display: block;"
+											hint="Sair"
+											onmouseover="return Rsis.Tip.show(this, event,&#39;Sair&#39;,4);"
+											onmouseout="return Rsis.Tip.hidden(this);" isvisible="true"
+											enablebutton="false" tabindex="0" data-ui="uieJqG"
+											help="false" helpkeys="false"><input type="button"
+											component="toolBarButton" class="tbBtStd tbBtDft"
+											value="Faturar AP"
+											onclick="onclickBtnFaturarPedidoVendaAP(this);"
+											id="uieJqG#formPedidoVenda:toolbarPedidoVenda.btnFaturarPedidoVendaAP"
+											style="float: right; visibility: visible; display: block;"
+											hint="Faturar AP"
+											onmouseover="return Rsis.Tip.show(this, event,&#39;Faturar AP&#39;,73);"
+											onmouseout="return Rsis.Tip.hidden(this);" helpkey="35"
+											isvisible="true" enablebutton="false" tabindex="0"
+											data-ui="uieJqG" help="false" helpkeys="false"><input
+											type="button" component="toolBarButton" class="tbBtStd "
+											value="Imprimir Pedidos"
+											onclick="ConsultaPedidoVenda.actionRelatorios(this);"
+											id="uieJqG#formPedidoVenda:toolbarPedidoVenda.btnRelatorio"
+											style="float: right; visibility: visible; display: block;"
+											hint="Imprimir Pedidos"
+											onmouseover="return Rsis.Tip.show(this, event,&#39;Imprimir Pedidos&#39;,114.4);"
+											onmouseout="return Rsis.Tip.hidden(this);" helpkey="36"
+											isvisible="true" enablebutton="false" tabindex="0"
+											data-ui="uieJqG" help="false" helpkeys="false"><input
+											type="button" component="toolBarButton" class="tbBtStd "
+											value="Alterar Loja Reserva"
+											onclick="ConsultaPedidoVenda.onClickAlterarLojaReserva(this);"
+											id="uieJqG#formPedidoVenda:toolbarPedidoVenda.btnAlterarLojaReserva"
+											style="float: right; visibility: visible; display: block;"
+											hint="Alterar Loja Reserva"
+											onmouseover="return Rsis.Tip.show(this, event,&#39;Alterar Loja Reserva&#39;,142);"
+											onmouseout="return Rsis.Tip.hidden(this);" helpkey="37"
+											isvisible="true" enablebutton="false" tabindex="0"
+											data-ui="uieJqG" help="false" helpkeys="false">
+									</div>
+								</div>
+							</div>
+							<div class="dtbs">
+								<div id="uieJqG#formPedidoVenda:dataTablePedidoVenda.hdr"
+									class="dtbsHd" style="width: 100%;" ctewidth="100%">
+									<div id="uieJqG#formPedidoVenda:dataTablePedidoVenda.ctHdr"
+										class="content" style="width: 100%">
+										<table style="width: 100%;"
+											id="uieJqG#formPedidoVenda:dataTablePedidoVenda"
+											node="/page/pageElements/pedidoVendaDto" totalbar="true"
+											totalnode="/totalPedidosDto" totalparams="total"
+											component="dataTable" selectiontype="radio" showform="true"
+											modal="true"
+											setparamsmodal="ConsultaPedidoVenda.SetParamsModal"
+											modalurl="/jretail/jretail.venda.pedido/view/jsp/pedidoVenda.jsf"
+											data-ui="uieJqG">
+											<colgroup>
+												<col width="24px">
+												<col width="20px">
+												<col width="70px">
+												<col width="140px">
+												<col width="90px">
+												<col width="100px">
+												<col width="130px">
+												<col width="100px">
+												<col width="100px">
+												<col width="100px">
+												<col width="95px">
+												<col width="100px">
+												<col width="100px">
+												<col width="99%">
+											</colgroup>
+											<thead id="uieJqG#formPedidoVenda:dataTablePedidoVenda.tHd">
+												<tr>
+													<th class="center" colalign="left" value="@ident"
+														isvisible="true" style="width: 24px;"></th>
+													<th wcol="20px" class="center" colalign="left"
+														value="@flagTipoPedido" helpkey="25" isvisible="true"
+														onmouseover="return $W.Rsis.Tip.show(this, event,&#39;Tipo Pedido:&#39;,120);"
+														onmouseout="return $W.Rsis.Tip.hidden(this)"
+														style="width: 20px;">TP:</th>
+													<th wcol="70px" class="center" colalign="left"
+														value="@identPedidoVenda" helpkey="25" isvisible="true"
+														style="width: 70px;">Pedido:</th>
+													<th wcol="140px" class="center" colalign="left"
+														value="@peNomeRazaoSocial" helpkey="26" isvisible="true"
+														style="width: 140px;">Cliente:</th>
+													<th wcol="90px" class="center" colalign="left"
+														value="@nomeCompletoUsuarioCriou" helpkey="27"
+														isvisible="true" style="width: 90px;">Usuário:</th>
+													<th wcol="100px" class="center" colalign="right"
+														value="@totalPrecoNota" mask="decimal::0,00" helpkey="28"
+														isvisible="true" style="width: 100px;">Valor:</th>
+													<th wcol="130px" class="center" colalign="left"
+														value="@descTipoVenda" helpkey="35" isvisible="true"
+														style="width: 130px;">Tipo Venda:</th>
+													<th wcol="100px" class="center" colalign="left"
+														value="@descBreveStatusPedidoVenda" helpkey="29"
+														isvisible="true" style="width: 100px;">Status:</th>
+													<th wcol="100px" class="center" colalign="left"
+														params="flagLiberacaoFinanceiras"
+														optionvalue="/flagLiberacaoFinanceiras/arrayList/enumItem@optionValue"
+														optionvalueref="/page/pageElements/pedidoVendaDto@flagLiberacaoSobreStatusPedidoVenda"
+														optiontext="/flagLiberacaoFinanceiras/arrayList/enumItem@optionText"
+														helpkey="30" isvisible="true" style="width: 100px;">Situação:</th>
+													<th wcol="100px" class="center" colalign="left"
+														value="@descLoja" helpkey="31" isvisible="true"
+														style="width: 100px;">Loja:</th>
+													<th wcol="95px" class="center" colalign="left"
+														value="@dtInclude" mask="date::dd/MM/yyyy" helpkey="32"
+														isvisible="true" style="width: 95px;">Dt. Inclusão:</th>
+													<th wcol="100px" class="center" colalign="left"
+														value="@davFormatado" helpkey="35" isvisible="true"
+														style="width: 100px;">DAV:</th>
+													<th wcol="100px" class="center" colalign="left"
+														value="@pvFormatado" helpkey="36" isvisible="true"
+														onmouseover="return $W.Rsis.Tip.show(this, event,&#39;Pré-Venda&#39;,90);"
+														onmouseout="return $W.Rsis.Tip.hidden(this)"
+														style="width: 100px;">PV:</th>
+													<th wcol="99%" class="center" colalign="left"
+														isvisible="true" style="width: 99%;"></th>
+												</tr>
+											</thead>
+										</table>
+									</div>
+								</div>
+								<div id="uieJqG#formPedidoVenda:dataTablePedidoVenda.bd"
+									class="dtbsBd" style="height: 252px;"></div>
+								<div id="uieJqG#formPedidoVenda:dataTablePedidoVenda.ftr"
+									class="dtbsFt"
+									style="position: relative; height: 26px; width: 100%;">
+									<div id="uieJqG#formPedidoVenda:dataTablePedidoVenda.ctFtr"
+										class="content"
+										style="width: 100%; margin-right: 20px; padding-right: 20px;">
+										<table style="height: auto; width: 100%;">
+											<colgroup>
+												<col width="24px">
+												<col width="20px">
+												<col width="70px">
+												<col width="140px">
+												<col width="90px">
+												<col width="100px">
+												<col width="130px">
+												<col width="100px">
+												<col width="100px">
+												<col width="100px">
+												<col width="95px">
+												<col width="100px">
+												<col width="100px">
+												<col width="99%">
+											</colgroup>
+											<tfoot id="uieJqG#formPedidoVenda:dataTablePedidoVenda.tft">
+												<tr>
+													<th class="center" colalign="left" isvisible="true"></th>
+													<th wcol="70px" class="center" colalign="left"
+														isvisible="true"></th>
+													<th wcol="150px" class="center" colalign="left"
+														isvisible="true"></th>
+													<th wcol="100px" class="center" colalign="center"
+														isvisible="true">Total:</th>
+													<th class="right" colalign="right" value="@totalPedidos"
+														mask="decimal::0,00" isvisible="true"></th>
+													<th class="center" colalign="left" colspan="8"
+														isvisible="true"></th>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+								</div>
+							</div>
+							<div id="uieJqG#formPedidoVenda:dataScrollerPedidoVenda"
+								class="dtScl" component="dataScroller" initpage="0"
+								maxrowstable="8" maxpages="1" statusvalidate="false"
+								datatable="uieJqG#formPedidoVenda:dataTablePedidoVenda"
+								data-ui="uieJqG">
+								<div>
+									<input
+										id="uieJqG#formPedidoVenda:dataScrollerPedidoVenda.prevButton"
+										type="button" value="«" component="scrollButton"
+										class="btnPgBld btleft" helpkeyprev="33"><span
+										id="uieJqG#formPedidoVenda:dataScrollerPedidoVenda.spanButtons"
+										style="float: left"></span><input
+										id="uieJqG#formPedidoVenda:dataScrollerPedidoVenda.nextButton"
+										type="button" value="»" component="scrollButton"
+										class="btnPgBld btright" helpkeynext="34">
+								</div>
+								<span class="dMsgScr"><span
+									id="uieJqG#formPedidoVenda:dataScrollerPedidoVenda.contentMsg"
+									class="ctmsg">Você está visualizando registros de&nbsp;<span
+										id="uieJqG#formPedidoVenda:dataScrollerPedidoVenda.ofPage"
+										component="tableScroller" class="lblPgBx">0</span>&nbsp;a&nbsp;<span
+										id="uieJqG#formPedidoVenda:dataScrollerPedidoVenda.evenPage"
+										component="tableScroller" class="lblPgBx">0</span>&nbsp;de&nbsp;<span
+										id="uieJqG#formPedidoVenda:dataScrollerPedidoVenda.totalPages"
+										component="tableScroller" class="lblPgBx">0</span>&nbsp;registro(s).
+								</span></span>
+							</div>
+						</form>
+					</div>
+	
+</body>
+</html>
